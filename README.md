@@ -2,9 +2,7 @@
 
 <!-- This is the place for the description of your application. It's usage, description, and potential dependencies. -->
 
-This repository contains the Cloudron app package source for Starter, a template Cloudron application.
-
-The package aims to set global development standards for Cloudron packages to ensure uniformity and ease of sharing.
+This repository contains the Cloudron app package source for [Pipelines, an OpenAI-Compatible Plugin Framework](https://github.com/open-webui/pipelines)
 
 ## Configuration
 

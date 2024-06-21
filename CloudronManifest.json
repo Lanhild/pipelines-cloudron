@@ -1,10 +1,14 @@
 {
-  "id": "com.openwebui.pipelines",
+  "id": "com.openwebui.pipelines.cloudronapp",
+  "title": "Pipelines",
+  "author": "Timothy Baek Jaeryang",
+  "description": "Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework",
   "version": "0.1.0",
   "healthCheckPath": "/",
   "httpPort": 9099,
   "addons": {
     "localstorage": {}
   },
+  "icon": "file://logo.png",
   "manifestVersion": 2
 }
