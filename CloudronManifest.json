@@ -1,0 +1,10 @@
+{
+  "id": "com.openwebui.pipelines",
+  "version": "0.1.0",
+  "healthCheckPath": "/",
+  "httpPort": 9099,
+  "addons": {
+    "localstorage": {}
+  },
+  "manifestVersion": 2
+}
