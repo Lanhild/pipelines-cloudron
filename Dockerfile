@@ -5,12 +5,18 @@ WORKDIR /app/code
 ENV ENV=prod \
   PORT=9099
 
+# install python 3.11
+RUN apt-get update && \
+    add-apt-repository -y ppa:deadsnakes && \
+    apt-get install -y --no-install-recommends python3.11 python3.11-venv python3.11-dev python3.11-distutils && \
+    rm -rf /usr/bin/python3 && ln -s /usr/bin/python3.11 /usr/bin/python3 && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
 RUN apt-get update && \
   apt-get install -y gcc build-essential && \
   apt-get clean && \
   rm -rf /var/cache/apt /var/lib/apt/lists
-
-ARG VERSION=latest
 
 RUN git clone https://github.com/open-webui/pipelines /app/code
 
