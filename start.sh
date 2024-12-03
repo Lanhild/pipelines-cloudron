@@ -18,4 +18,4 @@ echo "=> Setting permissions"
 chown -R cloudron:cloudron /app/data
 
 echo "=> Starting Pipelines"
-exec gosu cloudron:cloudron bash /app/code/pipelines/start.sh
+exec gosu cloudron:cloudron bash /app/code/start.sh
